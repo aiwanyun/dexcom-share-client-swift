@@ -125,7 +125,7 @@ public class ShareClientSettingsViewController: UITableViewController {
 
             switch LatestReadingRow(rawValue: indexPath.row)! {
             case .glucose:
-                cell.textLabel?.text = LocalizedString("葡萄糖", comment: "Title describing glucose value")
+                cell.textLabel?.text = LocalizedString("血糖", comment: "Title describing glucose value")
 
                 if let quantity = glucose?.quantity {
                     cell.detailTextLabel?.text = displayGlucosePreference.format(quantity)

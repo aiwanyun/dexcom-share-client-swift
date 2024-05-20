@@ -30,10 +30,11 @@ extension ShareService: ServiceAuthenticationUI {
                 title: LocalizedString("服务器", comment: "The title of the Dexcom share server URL credential"),
                 isSecret: false,
                 options: [
-                    (title: LocalizedString("我们", comment: "U.S. share server option title"),
+                    (title: LocalizedString("美国", comment: "U.S. share server option title"),
                      value: KnownShareServers.US.rawValue),
-                    (title: LocalizedString("在我们外面", comment: "Outside US share server option title"),
-                     value: KnownShareServers.NON_US.rawValue)
+                    (title: LocalizedString("亚太地区", comment: "Japan, Phillipines, Singapore share server option title"), value: KnownShareServers.APAC.rawValue),
+                    (title: LocalizedString("全世界", comment: "Outside US and APAC share server option title"),
+                     value: KnownShareServers.Worldwide.rawValue)
 
                 ]
             )
